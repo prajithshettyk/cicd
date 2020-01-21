@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './gradlew build'
+                sh 'gradle run'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
